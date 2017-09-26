@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a9577d0d-842f-466c-ae6a-3e8c19d49d1b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-client/src/main/java/com/foo/AsyncCallback.java" afterPath="$PROJECT_DIR$/thrift-client/src/main/java/com/foo/AsyncCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-client/src/main/java/com/foo/ClientTest.java" afterPath="$PROJECT_DIR$/thrift-client/src/main/java/com/foo/ClientTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-server/src/main/java/com/foo/AppServer.java" afterPath="$PROJECT_DIR$/thrift-server/src/main/java/com/foo/AppServer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -515,11 +512,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506406971855</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="xxx">
+      <created>1506408560719</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1506408560719</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15858000" />
+    <option name="totallyTimeSpent" value="15889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
