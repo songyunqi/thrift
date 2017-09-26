@@ -58,11 +58,11 @@ public class ClientTest {
             AsyncCallback callBack = new AsyncCallback(latch);
             //System.out.println("call method sayHello start ...");
             // 调用服务
+            System.out.println("Client calls .....");
             asyncClient.toMap(profile, callBack);
             //System.out.println("call method sayHello .... end");
             //等待完成异步调用
             boolean wait = latch.await(30, TimeUnit.SECONDS);
-            System.out.println("Client calls .....");
         } catch (IOException e) {
             e.printStackTrace();
         } catch (TException e) {
@@ -74,7 +74,7 @@ public class ClientTest {
 
     public static void main(String[] args) {
         ClientTest clientTest = new ClientTest();
-        //clientTest.go();
+        clientTest.go();
         clientTest.goAsyn();
     }
 }
