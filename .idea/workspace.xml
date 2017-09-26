@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a9577d0d-842f-466c-ae6a-3e8c19d49d1b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-client/src/main/java/com/foo/ClientTest.java" afterPath="$PROJECT_DIR$/thrift-client/src/main/java/com/foo/ClientTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,11 +19,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="Profile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thrift-core/src/main/java/com/foo/thrift/Profile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            <state relative-caret-position="1498">
+              <caret line="516" column="0" lean-forward="false" selection-start-line="511" selection-start-column="0" selection-end-line="516" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thrift-core/src/main/java/com/foo/thrift/ProfileServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -31,8 +42,18 @@
       <file leaf-file-name="profile.thrift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thrift/src/profile.thrift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="18" />
+            <state relative-caret-position="324">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/thrift-client/src/main/java/com/foo/ClientTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -44,57 +65,6 @@
             <state relative-caret-position="135">
               <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="27" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfileHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thrift-core/src/main/java/com/foo/thrift/ProfileHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="59" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfileServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thrift-core/src/main/java/com/foo/thrift/ProfileServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="946">
-              <caret line="43" column="64" lean-forward="false" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1157#1173#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thrift-server/src/main/java/com/foo/AppServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-182">
-              <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#572#573#0" expanded="true" />
-                <element signature="e#604#605#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/thrift-client/src/main/java/com/foo/ClientTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1026">
-              <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -151,6 +121,12 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -179,17 +155,6 @@
             <path>
               <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
               <item name="thrift" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -227,68 +192,7 @@
             <path>
               <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift-core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift-server" type="462c0819:PsiDirectoryNode" />
+              <item name="thrift-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -297,9 +201,37 @@
             <path>
               <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift-server" type="462c0819:PsiDirectoryNode" />
+              <item name="thrift-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
+              <item name="thrift-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
+              <item name="thrift-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
+              <item name="thrift-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-thrift" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-thrift" type="462c0819:PsiDirectoryNode" />
+              <item name="thrift-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="thrift" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -481,7 +413,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1506342462617</updated>
-      <workItem from="1506342466608" duration="4751000" />
+      <workItem from="1506342466608" duration="7726000" />
     </task>
     <task id="LOCAL-00001" summary="xxx">
       <created>1506347249251</created>
@@ -490,11 +422,25 @@
       <option name="project" value="LOCAL" />
       <updated>1506347249251</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="xxx">
+      <created>1506347258558</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1506347258558</updated>
+    </task>
+    <task id="LOCAL-00003" summary="xxx">
+      <created>1506388902757</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1506388902757</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4751000" />
+    <option name="totallyTimeSpent" value="7726000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -507,12 +453,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15652174" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18283582" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18390192" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -612,51 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thrift/src/profile.thrift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-core/src/main/java/com/foo/thrift/ProfileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-core/src/main/java/com/foo/thrift/ProfileHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="59" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-core/src/main/java/com/foo/thrift/Profile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2619">
-          <caret line="197" column="44" lean-forward="false" selection-start-line="197" selection-start-column="44" selection-end-line="197" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-core/src/main/java/com/foo/thrift/ProfileServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="43" column="64" lean-forward="false" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1157#1173#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
@@ -670,20 +571,66 @@
         <state relative-caret-position="-182">
           <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#572#573#0" expanded="false" />
+            <element signature="e#604#605#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-core/src/main/java/com/foo/thrift/ProfileHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="59" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-core/src/main/java/com/foo/thrift/ProfileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-core/src/main/java/com/foo/thrift/Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1498">
+          <caret line="516" column="0" lean-forward="false" selection-start-line="511" selection-start-column="0" selection-end-line="516" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Program Files/Java/jdk1.8.0_60/src.zip!/java/lang/Override.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-core/src/main/java/com/foo/thrift/ProfileServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift/src/profile.thrift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thrift-client/src/main/java/com/foo/ClientTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="486">
+          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>

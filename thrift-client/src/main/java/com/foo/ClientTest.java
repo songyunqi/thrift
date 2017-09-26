@@ -22,8 +22,7 @@ public class ClientTest {
     public static final int clientTimeout = 30000;
 
     public void test() {
-        TTransport transport = new TFramedTransport(new TSocket(address, PORT,
-                clientTimeout));
+        TTransport transport = new TFramedTransport(new TSocket(address, PORT, clientTimeout));
         TProtocol protocol = new TCompactProtocol(transport);
         ProfileService.Client client = new ProfileService.Client(protocol);
 
