@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a9577d0d-842f-466c-ae6a-3e8c19d49d1b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-client/src/main/java/com/foo/ClientTest.java" afterPath="$PROJECT_DIR$/thrift-client/src/main/java/com/foo/ClientTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -413,7 +412,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1506342462617</updated>
-      <workItem from="1506342466608" duration="7726000" />
+      <workItem from="1506342466608" duration="7757000" />
     </task>
     <task id="LOCAL-00001" summary="xxx">
       <created>1506347249251</created>
@@ -436,11 +435,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506388902757</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="xxx">
+      <created>1506393945164</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1506393945164</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7726000" />
+    <option name="totallyTimeSpent" value="7757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
