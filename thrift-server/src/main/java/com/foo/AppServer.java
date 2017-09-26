@@ -8,7 +8,6 @@ import org.apache.thrift.TProcessorFactory;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.server.THsHaServer;
-import org.apache.thrift.server.TNonblockingServer;
 import org.apache.thrift.server.TServer;
 import org.apache.thrift.server.TThreadPoolServer;
 import org.apache.thrift.transport.TFramedTransport;
@@ -61,18 +60,6 @@ public class AppServer {
             TServer server = new TThreadPoolServer(args);
             server.serve();
 
-//            TProcessor tprocessor = new Hello.Processor<>(new HelloImpl());
-//            TServerSocket serverTransport = new TServerSocket(SERVER_PORT);
-//            TThreadPoolServer.Args tArgs = new TThreadPoolServer.Args(
-//                    serverTransport);
-//            tArgs.processor(tprocessor);
-//            tArgs.protocolFactory(new TBinaryProtocol.Factory());
-//
-//            TThreadPoolServer ttps = new TThreadPoolServer(tArgs);
-//            System.out.println("init...");
-//            ttps.serve();
-
-
         } catch (TTransportException e) {
             e.printStackTrace();
         } catch (Exception e) {
@@ -84,6 +71,7 @@ public class AppServer {
     public static void main(String[] args) {
         int port = 9999;
         AppServer appServer = new AppServer(port);
-        appServer.goMulti();
+        appServer.start();
+        //appServer.goMulti();
     }
 }
