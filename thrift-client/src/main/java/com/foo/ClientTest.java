@@ -47,7 +47,6 @@ public class ClientTest {
         try {
             TAsyncClientManager clientManager = new TAsyncClientManager();
             TNonblockingTransport transport = new TNonblockingSocket(ADDRESS, PORT, CLIENT_TIMEOUT);
-            //TTransport transport = new TFramedTransport(new TSocket(ADDRESS, PORT, CLIENT_TIMEOUT));
             TProtocolFactory protocolFactory = new TCompactProtocol.Factory();
 
             ProfileService.AsyncClient asyncClient = new ProfileService.AsyncClient(protocolFactory, clientManager, transport);
@@ -56,11 +55,9 @@ public class ClientTest {
 
             CountDownLatch latch = new CountDownLatch(1);
             AsyncCallback callBack = new AsyncCallback(latch);
-            //System.out.println("call method sayHello start ...");
             // 调用服务
             System.out.println("Client calls .....");
             asyncClient.toMap(profile, callBack);
-            //System.out.println("call method sayHello .... end");
             //等待完成异步调用
             boolean wait = latch.await(30, TimeUnit.SECONDS);
         } catch (IOException e) {
