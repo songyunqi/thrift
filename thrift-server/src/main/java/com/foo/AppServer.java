@@ -5,12 +5,15 @@ import com.foo.thrift.ProfileServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.thrift.TMultiplexedProcessor;
 import org.apache.thrift.TProcessorFactory;
+import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.server.THsHaServer;
+import org.apache.thrift.server.TNonblockingServer;
 import org.apache.thrift.server.TServer;
-import org.apache.thrift.server.TSimpleServer;
 import org.apache.thrift.server.TThreadPoolServer;
-import org.apache.thrift.transport.*;
+import org.apache.thrift.transport.TFramedTransport;
+import org.apache.thrift.transport.TNonblockingServerSocket;
+import org.apache.thrift.transport.TTransportException;
 
 @Slf4j
 public class AppServer {
@@ -41,16 +44,35 @@ public class AppServer {
     }
 
 
-    public void go() {
+    public void goMulti() {
         try {
             TMultiplexedProcessor processor = new TMultiplexedProcessor();
-            TServerTransport t = new TServerSocket(port);
-            TServer server = new TThreadPoolServer(new TThreadPoolServer.Args(t).processor(processor));
-            //processor.registerProcessor("TopicService", new TopicService.Processor<TopicService.Iface>(new TopicImpl()));
             processor.registerProcessor("UserService", new ProfileService.Processor<ProfileService.Iface>(new ProfileServiceImpl()));
-            //TSimpleServer server = new TSimpleServer(new THsHaServer.Args(t).processor(processor));
-            System.out.println("the serveris started and is listening at 9090...");
+
+            TNonblockingServerSocket socket = new TNonblockingServerSocket(port);
+            //processor.registerProcessor("TopicService", new TopicService.Processor<TopicService.Iface>(new TopicImpl()));
+
+            TThreadPoolServer.Args args = new TThreadPoolServer.Args(socket);
+            args.processor(processor);
+            args.protocolFactory(new TBinaryProtocol.Factory());
+            args.transportFactory(new TFramedTransport.Factory());
+            args.processorFactory(new TProcessorFactory(processor));
+
+            TServer server = new TThreadPoolServer(args);
             server.serve();
+
+//            TProcessor tprocessor = new Hello.Processor<>(new HelloImpl());
+//            TServerSocket serverTransport = new TServerSocket(SERVER_PORT);
+//            TThreadPoolServer.Args tArgs = new TThreadPoolServer.Args(
+//                    serverTransport);
+//            tArgs.processor(tprocessor);
+//            tArgs.protocolFactory(new TBinaryProtocol.Factory());
+//
+//            TThreadPoolServer ttps = new TThreadPoolServer(tArgs);
+//            System.out.println("init...");
+//            ttps.serve();
+
+
         } catch (TTransportException e) {
             e.printStackTrace();
         } catch (Exception e) {
@@ -62,6 +84,6 @@ public class AppServer {
     public static void main(String[] args) {
         int port = 9999;
         AppServer appServer = new AppServer(port);
-        appServer.start();
+        appServer.goMulti();
     }
 }
