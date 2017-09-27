@@ -19,6 +19,7 @@ public class AsyncCallback implements org.apache.thrift.async.AsyncMethodCallbac
 
     public void onError(Exception e) {
         System.out.println("onError");
+        System.out.println(e.getMessage());
         latch.countDown();
     }
 }

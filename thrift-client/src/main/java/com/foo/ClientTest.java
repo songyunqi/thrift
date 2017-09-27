@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.thrift.TException;
 import org.apache.thrift.async.TAsyncClientManager;
 import org.apache.thrift.protocol.TCompactProtocol;
+import org.apache.thrift.protocol.TMultiplexedProtocol;
 import org.apache.thrift.protocol.TProtocol;
 import org.apache.thrift.protocol.TProtocolFactory;
 import org.apache.thrift.transport.*;
@@ -69,9 +70,39 @@ public class ClientTest {
         }
     }
 
+    public void goMulti() {
+        //TTransport transport = new TFramedTransport(new TSocket(ADDRESS, PORT, CLIENT_TIMEOUT));
+        TNonblockingTransport transport = null;
+
+        try {
+            transport = new TNonblockingSocket(ADDRESS, PORT, CLIENT_TIMEOUT);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        TProtocol protocol = new TCompactProtocol(transport);
+
+        try {
+            transport.open();
+        } catch (TTransportException e) {
+            e.printStackTrace();
+        }
+        TMultiplexedProtocol mp = new TMultiplexedProtocol(protocol, "UserService");
+        ProfileService.Client client = new ProfileService.Client(mp);
+        Profile profile = new Profile();
+        profile.setName("Snowolf");
+        try {
+            Map<String, String> map = client.toMap(profile);
+            System.out.println("" + map);
+        } catch (TException e) {
+            e.printStackTrace();
+        }
+        transport.close();
+    }
+
     public static void main(String[] args) {
         ClientTest clientTest = new ClientTest();
-        clientTest.go();
-        clientTest.goAsyn();
+        //clientTest.go();
+        clientTest.goMulti();
     }
 }

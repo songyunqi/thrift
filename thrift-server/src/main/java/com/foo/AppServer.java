@@ -7,11 +7,13 @@ import org.apache.thrift.TMultiplexedProcessor;
 import org.apache.thrift.TProcessorFactory;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TCompactProtocol;
+import org.apache.thrift.protocol.TMultiplexedProtocol;
 import org.apache.thrift.server.THsHaServer;
 import org.apache.thrift.server.TServer;
 import org.apache.thrift.server.TThreadPoolServer;
 import org.apache.thrift.transport.TFramedTransport;
 import org.apache.thrift.transport.TNonblockingServerSocket;
+import org.apache.thrift.transport.TSocket;
 import org.apache.thrift.transport.TTransportException;
 
 @Slf4j
@@ -53,7 +55,7 @@ public class AppServer {
 
             TThreadPoolServer.Args args = new TThreadPoolServer.Args(socket);
             args.processor(processor);
-            args.protocolFactory(new TBinaryProtocol.Factory());
+            args.protocolFactory(new TCompactProtocol.Factory());
             args.transportFactory(new TFramedTransport.Factory());
             args.processorFactory(new TProcessorFactory(processor));
 
@@ -71,7 +73,7 @@ public class AppServer {
     public static void main(String[] args) {
         int port = 9999;
         AppServer appServer = new AppServer(port);
-        appServer.start();
-        //appServer.goMulti();
+        //appServer.start();
+        appServer.goMulti();
     }
 }
