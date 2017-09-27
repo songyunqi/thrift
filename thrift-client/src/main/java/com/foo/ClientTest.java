@@ -5,10 +5,7 @@ import com.foo.thrift.ProfileService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.thrift.TException;
 import org.apache.thrift.async.TAsyncClientManager;
-import org.apache.thrift.protocol.TCompactProtocol;
-import org.apache.thrift.protocol.TMultiplexedProtocol;
-import org.apache.thrift.protocol.TProtocol;
-import org.apache.thrift.protocol.TProtocolFactory;
+import org.apache.thrift.protocol.*;
 import org.apache.thrift.transport.*;
 
 import java.io.IOException;
@@ -20,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 public class ClientTest {
 
     public final static int PORT = 9999;
-    public static final String ADDRESS = "localhost";
+    public static final String ADDRESS = "127.0.0.1";
     public static final int CLIENT_TIMEOUT = 30000;
 
     //go
@@ -71,32 +68,25 @@ public class ClientTest {
     }
 
     public void goMulti() {
-        //TTransport transport = new TFramedTransport(new TSocket(ADDRESS, PORT, CLIENT_TIMEOUT));
-        TNonblockingTransport transport = null;
 
-        try {
-            transport = new TNonblockingSocket(ADDRESS, PORT, CLIENT_TIMEOUT);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        TProtocol protocol = new TCompactProtocol(transport);
-
+        TFramedTransport transport = new TFramedTransport(new TSocket("127.0.0.1", PORT));
         try {
             transport.open();
         } catch (TTransportException e) {
             e.printStackTrace();
         }
+        TProtocol protocol = new TBinaryProtocol(transport);
         TMultiplexedProtocol mp = new TMultiplexedProtocol(protocol, "UserService");
         ProfileService.Client client = new ProfileService.Client(mp);
         Profile profile = new Profile();
         profile.setName("Snowolf");
+        Map<String, String> result = null;
         try {
-            Map<String, String> map = client.toMap(profile);
-            System.out.println("" + map);
+            result = client.toMap(profile);
         } catch (TException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
         }
+        System.out.println("result : " + result);
         transport.close();
     }
 
@@ -104,5 +94,6 @@ public class ClientTest {
         ClientTest clientTest = new ClientTest();
         //clientTest.go();
         clientTest.goMulti();
+        clientTest.goAsyn();
     }
 }

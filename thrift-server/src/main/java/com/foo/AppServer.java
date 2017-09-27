@@ -10,11 +10,9 @@ import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.protocol.TMultiplexedProtocol;
 import org.apache.thrift.server.THsHaServer;
 import org.apache.thrift.server.TServer;
+import org.apache.thrift.server.TSimpleServer;
 import org.apache.thrift.server.TThreadPoolServer;
-import org.apache.thrift.transport.TFramedTransport;
-import org.apache.thrift.transport.TNonblockingServerSocket;
-import org.apache.thrift.transport.TSocket;
-import org.apache.thrift.transport.TTransportException;
+import org.apache.thrift.transport.*;
 
 @Slf4j
 public class AppServer {
@@ -70,10 +68,28 @@ public class AppServer {
 
     }
 
+    public void goMutilTest(){
+        TMultiplexedProcessor processor = new TMultiplexedProcessor();
+        processor.registerProcessor("UserService", new ProfileService.Processor(new ProfileServiceImpl()));
+        //processor.registerProcessor("MultiplyService", new MultiplyService.Processor(new MultiplyHandler()));
+        TServerTransport serverTransport = null;//
+        try {
+            serverTransport = new TServerSocket(port);
+        } catch (TTransportException e) {
+            e.printStackTrace();
+        }
+        TTransportFactory factory = new TFramedTransport.Factory();
+        TServer.Args args = new TServer.Args(serverTransport);
+        args.processor(processor);
+        args.transportFactory(factory);
+        TSimpleServer server = new TSimpleServer(args);
+        server.serve();
+    }
+
     public static void main(String[] args) {
         int port = 9999;
         AppServer appServer = new AppServer(port);
         //appServer.start();
-        appServer.goMulti();
+        appServer.goMutilTest();
     }
 }
